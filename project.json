@@ -1,0 +1,8 @@
+{
+  "slug": "csv-stream-validator",
+  "title": "CSV Stream Validator",
+  "description": "Validate order imports one record at a time and keep precise decimal totals.",
+  "category": "backend",
+  "demo_args": [],
+  "expected_exit": 0
+}

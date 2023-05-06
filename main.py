@@ -12,3 +12,16 @@ import sys
 COLUMNS = ("order_id", "customer_email", "quantity", "unit_price")
 
 
+class SchemaError(ValueError):
+    pass
+
+
+@dataclass(frozen=True)
+class RowResult:
+    line_number: int
+    values: object
+    errors: tuple
+
+    @property
+    def valid(self):
+        return not self.errors

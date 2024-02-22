@@ -1,0 +1,6 @@
+order_id,customer_email,quantity,unit_price
+DEMO-001,customer1@example.invalid,2,19.50
+DEMO-002,customer2@example.invalid,0,4.00
+DEMO-003,invalid-address,3,5.123
+DEMO-001,customer1@example.invalid,1,2.00
+DEMO-004,customer4@example.invalid,5,0

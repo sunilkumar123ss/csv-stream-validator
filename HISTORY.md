@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 5 of 19. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 6 of 19. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -17,7 +17,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 3 | 2023-05-06T13:27:09+05:30 | define schema errors and per-record validation results (present) |
 | 4 | 2023-10-27T16:20:40+05:30 | validate streamed order records and exact decimal totals (present) |
 | 5 | 2024-02-22T19:45:03+05:30 | add synthetic stream fixtures with valid and invalid records (present) |
-| 6 | 2024-03-09T14:40:28+05:30 | add the deterministic demonstration and command-line entry point (later stage) |
+| 6 | 2024-03-09T14:40:28+05:30 | add the deterministic demonstration and command-line entry point (present) |
 | 7 | 2024-04-07T18:15:32+05:30 | test valid typed values and decimal total (later stage) |
 | 8 | 2024-04-11T19:33:20+05:30 | test missing and duplicate headers (later stage) |
 | 9 | 2024-08-05T09:56:09+05:30 | test column order can change (later stage) |

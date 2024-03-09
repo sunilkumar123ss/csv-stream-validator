@@ -77,3 +77,24 @@ def validate_stream(stream):
                                       "quantity": quantity, "unit_price": price,
                                       "total": quantity * price}
         yield RowResult(line_number, values, tuple(errors))
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--file", type=Path, default=Path(__file__).resolve().parent / "sample.csv")
+    parser.add_argument("--strict", action="store_true", help="exit 1 if any row is invalid")
+    args = parser.parse_args()
+    invalid = 0
+    try:
+        with args.file.open(encoding="utf-8", newline="") as stream:
+            for row in validate_stream(stream):
+                invalid += not row.valid
+                print(json.dumps({"line": row.line_number, "valid": row.valid,
+                                  "values": row.values, "errors": row.errors}, default=str))
+    except (OSError, UnicodeError, SchemaError) as exc:
+        parser.error(str(exc))
+    return 1 if args.strict and invalid else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

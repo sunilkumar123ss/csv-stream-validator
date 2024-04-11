@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 7 of 19. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 8 of 19. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -19,7 +19,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 5 | 2024-02-22T19:45:03+05:30 | add synthetic stream fixtures with valid and invalid records (present) |
 | 6 | 2024-03-09T14:40:28+05:30 | add the deterministic demonstration and command-line entry point (present) |
 | 7 | 2024-04-07T18:15:32+05:30 | test valid typed values and decimal total (present) |
-| 8 | 2024-04-11T19:33:20+05:30 | test missing and duplicate headers (later stage) |
+| 8 | 2024-04-11T19:33:20+05:30 | test missing and duplicate headers (present) |
 | 9 | 2024-08-05T09:56:09+05:30 | test column order can change (later stage) |
 | 10 | 2024-10-28T13:06:36+05:30 | test field count error does not abort later rows (later stage) |
 | 11 | 2024-12-05T14:15:24+05:30 | test multiple field errors accumulated (later stage) |

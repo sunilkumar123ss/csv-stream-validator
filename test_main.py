@@ -17,6 +17,9 @@ class CSVValidationTests(unittest.TestCase):
         self.assertEqual(row.values['total'], Decimal('0.30'))
         self.assertEqual(row.values['quantity'], 3)
 
+    def test_missing_and_duplicate_headers(self):
+        for data in ('', 'order_id,quantity\n', 'order_id,order_id,quantity,unit_price\n'):
+            with self.subTest(data=data), self.assertRaises(SchemaError): self.read(data)
 
 
 

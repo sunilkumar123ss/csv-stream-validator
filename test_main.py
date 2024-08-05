@@ -21,6 +21,9 @@ class CSVValidationTests(unittest.TestCase):
         for data in ('', 'order_id,quantity\n', 'order_id,order_id,quantity,unit_price\n'):
             with self.subTest(data=data), self.assertRaises(SchemaError): self.read(data)
 
+    def test_column_order_can_change(self):
+        rows = self.read('quantity,unit_price,customer_email,order_id\n2,1.50,a@example.invalid,A\n')
+        self.assertEqual(rows[0].values['total'], Decimal('3.00'))
 
 
 

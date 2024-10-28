@@ -25,6 +25,10 @@ class CSVValidationTests(unittest.TestCase):
         rows = self.read('quantity,unit_price,customer_email,order_id\n2,1.50,a@example.invalid,A\n')
         self.assertEqual(rows[0].values['total'], Decimal('3.00'))
 
+    def test_field_count_error_does_not_abort_later_rows(self):
+        rows = self.read(HEADER + 'A,a@example.invalid,1\nB,b@example.invalid,1,2.00\n')
+        self.assertFalse(rows[0].valid)
+        self.assertTrue(rows[1].valid)
 
 
 

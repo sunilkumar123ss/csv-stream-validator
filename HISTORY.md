@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 9 of 19. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 10 of 19. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -21,7 +21,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 7 | 2024-04-07T18:15:32+05:30 | test valid typed values and decimal total (present) |
 | 8 | 2024-04-11T19:33:20+05:30 | test missing and duplicate headers (present) |
 | 9 | 2024-08-05T09:56:09+05:30 | test column order can change (present) |
-| 10 | 2024-10-28T13:06:36+05:30 | test field count error does not abort later rows (later stage) |
+| 10 | 2024-10-28T13:06:36+05:30 | test field count error does not abort later rows (present) |
 | 11 | 2024-12-05T14:15:24+05:30 | test multiple field errors accumulated (later stage) |
 | 12 | 2025-01-28T16:59:49+05:30 | test duplicate id flagged even if prior row invalid (later stage) |
 | 13 | 2025-03-03T11:26:38+05:30 | test quoted comma is one field (later stage) |

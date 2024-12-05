@@ -30,6 +30,10 @@ class CSVValidationTests(unittest.TestCase):
         self.assertFalse(rows[0].valid)
         self.assertTrue(rows[1].valid)
 
+    def test_multiple_field_errors_accumulated(self):
+        row = self.read(HEADER + 'lower,invalid,0,1.234\n')[0]
+        self.assertEqual(len(row.errors), 4)
+        self.assertIsNone(row.values)
 
 
 

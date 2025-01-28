@@ -35,6 +35,9 @@ class CSVValidationTests(unittest.TestCase):
         self.assertEqual(len(row.errors), 4)
         self.assertIsNone(row.values)
 
+    def test_duplicate_id_flagged_even_if_prior_row_invalid(self):
+        rows = self.read(HEADER + 'A,invalid,1,1\nA,a@example.invalid,1,1\n')
+        self.assertIn('duplicate order_id', rows[1].errors)
 
 
 

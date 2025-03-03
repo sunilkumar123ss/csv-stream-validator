@@ -39,6 +39,10 @@ class CSVValidationTests(unittest.TestCase):
         rows = self.read(HEADER + 'A,invalid,1,1\nA,a@example.invalid,1,1\n')
         self.assertIn('duplicate order_id', rows[1].errors)
 
+    def test_quoted_comma_is_one_field(self):
+        row = self.read(HEADER + 'A,"a,b@example.invalid",1,2.00\n')[0]
+        self.assertEqual(len(row.errors), 1)
+        self.assertIn('customer_email', row.errors[0])
 
 
 

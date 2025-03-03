@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 12 of 19. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 13 of 19. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -24,7 +24,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 10 | 2024-10-28T13:06:36+05:30 | test field count error does not abort later rows (present) |
 | 11 | 2024-12-05T14:15:24+05:30 | test multiple field errors accumulated (present) |
 | 12 | 2025-01-28T16:59:49+05:30 | test duplicate id flagged even if prior row invalid (present) |
-| 13 | 2025-03-03T11:26:38+05:30 | test quoted comma is one field (later stage) |
+| 13 | 2025-03-03T11:26:38+05:30 | test quoted comma is one field (present) |
 | 14 | 2025-03-23T09:41:58+05:30 | test malformed quote reports terminal error (later stage) |
 | 15 | 2025-06-02T14:20:32+05:30 | test quantity and price ranges (later stage) |
 | 16 | 2025-07-12T14:51:09+05:30 | add isolated tests, demo, and help verification (later stage) |

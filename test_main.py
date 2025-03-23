@@ -44,6 +44,10 @@ class CSVValidationTests(unittest.TestCase):
         self.assertEqual(len(row.errors), 1)
         self.assertIn('customer_email', row.errors[0])
 
+    def test_malformed_quote_reports_terminal_error(self):
+        rows = self.read(HEADER + 'A,"unterminated,1,2.00\n')
+        self.assertEqual(len(rows), 1)
+        self.assertIn('CSV syntax error', rows[0].errors[0])
 
 
 

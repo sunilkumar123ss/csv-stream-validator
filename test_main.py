@@ -49,6 +49,10 @@ class CSVValidationTests(unittest.TestCase):
         self.assertEqual(len(rows), 1)
         self.assertIn('CSV syntax error', rows[0].errors[0])
 
+    def test_quantity_and_price_ranges(self):
+        for quantity, price in [('1e3', '1'), ('-1', '1'), ('1', '-2'), ('1', '1e2'), ('1000000000', '1')]:
+            with self.subTest(quantity=quantity, price=price):
+                self.assertFalse(self.read(HEADER + 'A,a@example.invalid,{},{}\n'.format(quantity, price))[0].valid)
 
 
 if __name__ == '__main__':

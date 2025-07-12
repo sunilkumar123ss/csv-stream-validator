@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 15 of 19. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 16 of 19. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -27,7 +27,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 13 | 2025-03-03T11:26:38+05:30 | test quoted comma is one field (present) |
 | 14 | 2025-03-23T09:41:58+05:30 | test malformed quote reports terminal error (present) |
 | 15 | 2025-06-02T14:20:32+05:30 | test quantity and price ranges (present) |
-| 16 | 2025-07-12T14:51:09+05:30 | add isolated tests, demo, and help verification (later stage) |
+| 16 | 2025-07-12T14:51:09+05:30 | add isolated tests, demo, and help verification (present) |
 | 17 | 2025-08-28T11:14:31+05:30 | add the hosted Python verification workflow (later stage) |
 | 18 | 2026-02-05T15:58:14+05:30 | record the completed local verification and its limits (later stage) |
 | 19 | 2026-07-31T11:24:18+05:30 | Document usage, limitations and the disclosed reconstructed timeline (later stage) |
